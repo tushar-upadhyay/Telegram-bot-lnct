@@ -15,7 +15,7 @@ bot.command('login',(ctx) => {
 )
 function _login(ctx){
   return Markup.inlineKeyboard([
-    Markup.button.url('Login', `https://lnctbot.herokuapp.com/login#${ctx.chat.id}`),
+    Markup.button.url('Login', `${process.env.url}/login#${ctx.chat.id}`),
   ])
 }
 function _logout(ctx){
