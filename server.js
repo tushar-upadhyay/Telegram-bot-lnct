@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express  =  require('express');
 const app = express();
+
 const path =  require('path');
 const {bot} = require('./bot');
 const {login,getAttendance} = require('./login');
